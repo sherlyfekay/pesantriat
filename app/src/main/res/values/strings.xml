@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Pesantriat</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Password</string>
+    <string name="hint_alamat">Alamat</string>
+    <string name="hint_name">Nama Lengkap</string>
+    <string name="hint_no_telp">Nama Telepon</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Daftar</string>
+    <string name="btn_link_to_register">Belum pernah mendaftar? Daftar sekarang.</string>
+    <string name="btn_link_to_login">Sudah registrasi? silahkan login disini.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_Ya">Ya</string>
+    <string name="btn_Tidak">Tidak</string>
+    <string name="nama_rs">Rumah Sakit Medika Surabaya</string>
+    <string name="btn_logout">LOGOUT</string>
+</resources>

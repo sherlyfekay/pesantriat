@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sherly.pesantriat.activity.DokterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ic_launcher_round"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:text="Dr. Sherly Fekay, S.Pog"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/stethoscope"/>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:text="Dokter Mata"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_margin="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:text="Laki-laki"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:text="25 tahun"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Jam Praktek"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/colorWhite"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:background="@drawable/cell_shape"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="Hari"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Jam"
+                    android:padding="3dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@drawable/cell_shape"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:background="@drawable/cell_shape"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="Senin"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="09.00 - 12.00 WIB"
+                    android:padding="3dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@drawable/cell_shape"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:background="@drawable/cell_shape"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="Selasa"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="09.00 - 12.00 WIB"
+                    android:padding="3dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@drawable/cell_shape"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:background="@drawable/cell_shape"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="Rabu"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="09.00 - 12.00 WIB"
+                    android:padding="3dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@drawable/cell_shape"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:background="@drawable/cell_shape"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="Kamis"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="09.00 - 12.00 WIB"
+                    android:padding="3dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@drawable/cell_shape"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:background="@drawable/cell_shape"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="Jum'at"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="09.00 - 12.00 WIB"
+                    android:padding="3dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@drawable/cell_shape"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:background="@drawable/cell_shape"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="Sabtu"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Libur"
+                    android:padding="3dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@drawable/cell_shape"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:background="@drawable/cell_shape"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="Minggu"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Libur"
+                    android:padding="3dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@drawable/cell_shape"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAmbilNomor"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ambil Nomor Antrian"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+
+</LinearLayout>

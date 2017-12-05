@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sherly.pesantriat">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.AccountActivity" />
+        <activity android:name=".activity.CurrentPassActivity" />
+        <activity android:name=".activity.ChangeEmailActivity" />
+        <activity android:name=".activity.ChangePassActivity" />
+        <activity android:name=".activity.ItemPoliActivity" />
+        <activity android:name=".activity.DaftarDokterActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.RegisterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.DokterActivity" />
+        <activity android:name=".activity.KonfirmasiAntrianActivity" />
+        <activity android:name=".activity.AntrianActivity"></activity>
+    </application>
+
+</manifest>

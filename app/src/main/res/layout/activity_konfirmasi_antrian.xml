@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sherly.pesantriat.activity.KonfirmasiAntrianActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/medicine"/>
+        <TextView
+            android:id="@+id/name_rs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="@string/nama_rs"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/name_tgl"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="27 September 2017"
+                android:gravity="center"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/name_jam"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="12:00:30 WIB"
+                android:textSize="16sp"
+                />
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/name_dokter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sherly Fekay, S.Pog."
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NOMOR ANTRIAN"
+            android:textSize="25sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/name_poli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="POLI MATA"
+            android:textSize="25sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/urutan_antrian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="31"
+            android:textSize="60sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+        />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/name_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sekarang : Nomor Antrian"
+                android:textSize="16sp"
+                android:paddingRight="5dp"
+                />
+
+            <TextView
+                android:id="@+id/urutan_antrian2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/name_panggil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anda akan dipanggil pada pukul"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/jam_panggil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14.00"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:paddingLeft="5dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/name_reminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_notifications"
+                android:drawableTint="@color/colorPrimary"
+                android:drawablePadding="10dp"
+                android:text="Ingatkan saya mulai antrian ke-"
+                android:layout_marginRight="5dp"
+                android:textSize="16sp"
+                />
+
+            <Button
+                android:layout_width="32dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                android:onClick="decrement"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/tvIngatAntrian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="11"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="32dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                android:onClick="increment"
+                android:text="+" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp"
+        >
+        <Button
+            android:id="@+id/btnYa_antrian"
+            android:text="@string/btn_Ya"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnTidak_antrian"
+            android:text="@string/btn_Tidak"
+            android:backgroundTint="@color/colorWhite"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>
